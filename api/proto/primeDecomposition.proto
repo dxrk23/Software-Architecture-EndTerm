@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package primeAVG;
+
+service PrimeDecompositor{
+    rpc Decomposite(DecompositeRequest) returns (DecompositeResponse){}
+}
+
+message DecompositeRequest{
+    int32 number = 1;
+}
+
+message DecompositeResponse{
+    repeated int32 results = 1;
+}
