@@ -1,7 +1,6 @@
 FROM golang:alpine as build-env
 ADD . /app
 WORKDIR /app
-COPY . .
 
 EXPOSE 8080
 
